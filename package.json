@@ -1,13 +1,17 @@
 {
   "name": "semantic-release-example",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Example implementation of the semantic-release package",
   "main": "build/index.js",
   "scripts": {
     "codecov": "codecov",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "compile": "babel -d build/ src/ --ignore node_modules,*.test.js",
     "lint": "eslint --ext .js .",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prepublishOnly": "npm run compile",
+    "semantic-commit": "commit",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -26,6 +30,10 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
+    "@commitlint/cli": "^5.0.1",
+    "@commitlint/config-angular": "^4.3.0",
+    "@commitlint/prompt": "^5.0.1",
+    "@commitlint/prompt-cli": "^5.0.1",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2016": "^6.24.1",
@@ -33,6 +41,8 @@
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "jest": "^21.2.1"
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "semantic-release": "^8.2.0"
   }
 }
