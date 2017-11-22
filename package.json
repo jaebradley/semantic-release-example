@@ -1,0 +1,38 @@
+{
+  "name": "semantic-release-example",
+  "version": "1.0.0",
+  "description": "Example implementation of the semantic-release package",
+  "main": "build/index.js",
+  "scripts": {
+    "codecov": "codecov",
+    "compile": "babel -d build/ src/ --ignore node_modules,*.test.js",
+    "lint": "eslint --ext .js .",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaebradley/semantic-release-example.git"
+  },
+  "keywords": [
+    "semantic-release"
+  ],
+  "author": "jae.b.bradley@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaebradley/semantic-release-example/issues"
+  },
+  "homepage": "https://github.com/jaebradley/semantic-release-example#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2016": "^6.24.1",
+    "codecov": "^3.0.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1"
+  }
+}
