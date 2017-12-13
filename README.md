@@ -12,7 +12,7 @@ This (very simple) package hopefully helps to illustrate how to implement [the `
 
 ## Implementation Notes
 
-Used [the `semantic-release-cli` package](https://www.npmjs.com/package/semantic-release-cli) to get setup
+Use [the `semantic-release-cli` package](https://www.npmjs.com/package/semantic-release-cli) to get setup.
 
 ![alt-text](https://imgur.com/VdfTdU2.png)
 
