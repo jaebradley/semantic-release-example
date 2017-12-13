@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-example",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "Example implementation of the semantic-release package",
   "main": "build/index.js",
   "scripts": {
