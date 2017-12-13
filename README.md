@@ -39,5 +39,5 @@ A new release is cut when the `master` branch Travis build successfully complete
 ### Specify a `subject`
 ![alt-text](https://imgur.com/w6UiCw1.png)
 
-### Full commit message after the CLI exist successfully
+### Full commit message after the CLI exits successfully
 ![alt-text](https://imgur.com/oyHT23e.png)
