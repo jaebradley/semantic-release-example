@@ -1,6 +1,6 @@
-import { getFirstSemanticReleaseExampleMessage, getAnotherSemanticReleaseExampleMessage } from './SemanticReleaseExampleMessageService';
+import { getSemanticReleaseExampleMessage, getAnotherSemanticReleaseExampleMessage } from './SemanticReleaseExampleMessageService';
 
 export {
-  getFirstSemanticReleaseExampleMessage,
+  getSemanticReleaseExampleMessage,
   getAnotherSemanticReleaseExampleMessage,
 };
