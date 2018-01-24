@@ -1,9 +1,9 @@
-import { getSemanticReleaseExampleMessage, getAnotherSemanticReleaseExampleMessage } from './SemanticReleaseExampleMessageService';
+import { getFirstSemanticReleaseExampleMessage, getAnotherSemanticReleaseExampleMessage } from './SemanticReleaseExampleMessageService';
 
 describe('SemanticReleaseExampleMessageService', () => {
-  describe('#getSemanticReleaseExampleMessage', () => {
+  describe('#getFirstSemanticReleaseExampleMessage', () => {
     it('should return message', () => {
-      expect(getSemanticReleaseExampleMessage()).toEqual('This implements the semantic-release package. Find more information at https://github.com/semantic-release/semantic-release.');
+      expect(getFirstSemanticReleaseExampleMessage()).toEqual('This implements the semantic-release package. Find more information at https://github.com/semantic-release/semantic-release.');
     });
   });
 
