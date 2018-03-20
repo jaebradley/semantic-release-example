@@ -1,4 +1,6 @@
 # semantic-release-example
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaebradley/semantic-release-example.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/jaebradley/semantic-release-example.svg?branch=implement-semantic-release)](https://travis-ci.org/jaebradley/semantic-release-example)
 [![codecov](https://codecov.io/gh/jaebradley/semantic-release-example/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/semantic-release-example)
 [![npm](https://img.shields.io/npm/v/semantic-release-example.svg)](https://www.npmjs.com/package/semantic-release-example)
