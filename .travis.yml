@@ -11,7 +11,7 @@ script:
   - npm run lint
   - npm run test
 after_success:
-  - npm run semantic-release
+  - npm run travis-deploy-once 'npm run semantic-release
   - npm run codecov
 branches:
   except:
