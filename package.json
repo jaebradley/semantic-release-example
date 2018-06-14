@@ -39,7 +39,7 @@
     "babel-jest": "^23.0.0-alpha.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2016": "^6.24.1",
-    "codecov": "^3.0.0",
+    "codecov": "^3.0.2",
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
