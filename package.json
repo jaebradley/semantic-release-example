@@ -6,11 +6,12 @@
   "scripts": {
     "codecov": "codecov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "compile": "babel -d build/ src/ --ignore node_modules,*.test.js",
+    "build": "babel src/ -d build/ --delete-dir-on-start",
+    "build:prod": "BABEL_ENV=production npm run build",
     "lint": "eslint --ext .js .",
-    "test": "jest --coverage",
-    "prepublishOnly": "npm run compile",
-    "semantic-commit": "commit",
+    "test": "jest",
+    "prepublishOnly": "npm run build:prod",
+    "gc": "commit",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
@@ -28,17 +29,24 @@
   },
   "homepage": "https://github.com/jaebradley/semantic-release-example#readme",
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/"
+    ],
+    "collectCoverage": true
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-angular": "^7.0.1",
     "@commitlint/prompt": "^7.0.0",
     "@commitlint/prompt-cli": "^7.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^23.0.0-alpha.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2016": "^6.24.1",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^23.0.1",
+    "babel-preset-minify": "^0.4.0",
     "codecov": "^3.0.2",
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
